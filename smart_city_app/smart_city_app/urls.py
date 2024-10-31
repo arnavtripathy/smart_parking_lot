@@ -24,5 +24,8 @@ urlpatterns = [
     path('register/', register_view, name='register'),
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
-    path('home/', home, name='home')
+    path('home/', home, name='home'),
+    path('book-spot/<int:spot_id>/', book_spot, name='book_spot'),
+    path('confirm-book-spot/<int:spot_id>/', confirm_book_spot, name='confirm_book_spot'),
+    path('booking_success/', booking_success, name='booking_success'),
 ]

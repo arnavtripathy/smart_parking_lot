@@ -174,7 +174,7 @@
         }
 
         async function findNearestParking() {
-            const radius = document.getElementById('radiusInput').value || 10000;
+            const radius = Math.min(document.getElementById('radiusInput').value, 10000);
             const userLat = userMarker.getLatLng().lat;
             const userLon = userMarker.getLatLng().lng;
 
@@ -193,13 +193,12 @@
                     if (element.type === "node") {
                         const parkingMarker = L.marker([element.lat, element.lon]).addTo(map);
                         const popupTextParkingName = element.tags && element.tags.name ? element.tags.name : "Unidentified Parking Lot";
-                        const popupTextParkingCapacity = element.tags && element.tags.capacity ? element.tags.capacity : "Unknown Capacity";
                         const popupContent = `
                             <div class="popup-content">
-                                <strong>${popupTextParkingName}(${popupTextParkingCapacity})</strong>
+                                <strong>${popupTextParkingName}</strong>
                                 <div class="popup-buttons">
                                     <button class="popup-button take-me-button" onclick="openDirections(${userLat}, ${userLon}, ${element.lat}, ${element.lon})">Take Me</button>
-                                    <button class="popup-button book-spot-button">Book Spot</button>
+                                    <button class="popup-button book-spot-button" onclick="window.location.href = '/book-spot/' + ${element.id};">Book Spot</button>
                                 </div>
                             </div>
                         `;
