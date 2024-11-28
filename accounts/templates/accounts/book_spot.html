@@ -1,0 +1,17 @@
+<!-- accounts/templates/accounts/book_spot.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Spot</title>
+</head>
+<body>
+    <h1>Parking Spot Details</h1>
+    <p><strong>Name:</strong> {{ spot.name }}</p>
+    <p><strong>Current Capacity:</strong> {{ spot.capacity }}</p>
+    <form action="{% url 'confirm_book_spot' spot.id %}" method="POST">
+        {% csrf_token %}
+        <button type="submit">Confirm Booking</button>
+    </form>
+</body>
+</html>

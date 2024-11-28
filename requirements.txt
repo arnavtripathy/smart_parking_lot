@@ -1,0 +1,5 @@
+django
+reportlab
+qr
+firebase-admin
+firebase
