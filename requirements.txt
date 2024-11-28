@@ -1,5 +1,5 @@
 django
 reportlab
-qr
+qrcode
 firebase-admin
 firebase
