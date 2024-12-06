@@ -1,6 +1,8 @@
-# smart_parking_lot
+# Dublin Smart Parking lot Concept App 
 
 Smart Parking lot app for Urban computing subject - Msc Trinity college Dublin
+
+Written in Django and map generated using Leaflet.js
 
 ## Parking lot Visualisation
 
