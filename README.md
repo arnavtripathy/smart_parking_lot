@@ -2,7 +2,7 @@
 
 Smart Parking lot app for Urban computing subject - Msc Trinity college Dublin
 
-##The App
+## Parking lot Visualisation
 
 Below is a screenshot of the parking lot visualisation for the app:
 
@@ -13,7 +13,7 @@ The goal of this visualisation was to fetch parking lots available as per user�
 
 Internally, the page calls overpass-turbo api and fetches the details. The map is generated using leaflet.js. The user can use the “Take me” option to find navigation to the parking lot. If the user chooses the “Book spot”, the user can attempt to book the spot. 
 
-##Additional Tasks
+## Additional Tasks
 
 - Real time change in numbers of the parking  lot. The numbers change as more users book a parking lot.
 <img width="404" alt="Screenshot 2024-11-28 022956" src="https://github.com/user-attachments/assets/72062516-aa44-4491-9f6a-907364a68149">
@@ -27,7 +27,7 @@ Internally, the page calls overpass-turbo api and fetches the details. The map i
 
 The motivation behind these features was to replicate the closest working model of a parking lot booking system as real as possible. We could have added more features to make it more realistic, however, due to time constraints, we were unable to add.
 
-##Instructions to run code:
+## Instructions to run code:
 
 Steps to follow:
 - Clone the repo : `git clone https://github.com/arnavtripathy/smart_parking_lot` 
