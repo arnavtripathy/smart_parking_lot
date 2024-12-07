@@ -2,7 +2,9 @@
 
 Smart Parking lot app for Urban computing subject - Msc Trinity college Dublin
 
-Written in Django and map generated using Leaflet.js
+Written in Django and map generated using Leaflet.js.
+
+Parking lot data is stored in Firebase.
 
 ## Parking lot Visualisation
 
@@ -16,6 +18,10 @@ The goal of this visualisation was to fetch parking lots available as per user�
 Internally, the page calls overpass-turbo api and fetches the details. The map is generated using leaflet.js. The user can use the “Take me” option to find navigation to the parking lot. If the user chooses the “Book spot”, the user can attempt to book the spot. 
 
 ## Additional Tasks
+
+- User Registration and Login to keep track of user details using the Parking lot.
+<img width="1205" alt="Screenshot 2024-12-07 132526" src="https://github.com/user-attachments/assets/887686a5-0c51-4934-93a1-77b7cba151a6">
+
 
 - Real time change in numbers of the parking  lot. The numbers change as more users book a parking lot.
 <img width="404" alt="Screenshot 2024-11-28 022956" src="https://github.com/user-attachments/assets/72062516-aa44-4491-9f6a-907364a68149">
